@@ -1,0 +1,7 @@
+{
+  "nodeModulesDir": "auto",
+  "tasks": {
+    "build": "deno run -A npm:astro build && deno run -A scripts/wrap-server-entry.mjs",
+    "start": "deno run --allow-all ./dist/server/entry.mjs"
+  }
+}
